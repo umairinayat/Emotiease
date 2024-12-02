@@ -15,3 +15,4 @@ document.getElementById("waitlistForm").addEventListener("submit", function(even
         document.getElementById("emailInput").value = "";
     }
 });
+

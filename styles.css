@@ -1,225 +1,204 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #121212; /* Dark background */
-    color: #FFFFFF; /* Light text for contrast */
+    box-sizing: border-box;
 }
 
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Main Container */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-/* Header */
-header {
-    background: #1E1E1E;
-    color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
+/* About Section */
+#about {
+    background: #222;
+    padding: 50px 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-header p {
-    margin: 10px 0 0;
-    font-size: 1.2rem;
-}
-
-/* Main Content */
-main {
-    padding: 20px 0;
-}
-
-/* Section Styles */
-section {
-    margin-bottom: 50px;
-}
-
-h2 {
-    color: #FFFFFF;
-    margin-bottom: 10px;
+#about p {
+    font-size: 1rem;
 }
 
 /* Features Section */
+#features {
+    background: #333;
+    padding: 50px 0;
+}
+
+#features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
 .feature-card {
-    background: #1E1E1E;
-    border: 1px solid #333333;
-    border-radius: 10px;
+    background: #444;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card img {
     width: 100%;
-    max-height: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 .feature-card h3 {
-    color: #FFFFFF;
-    margin-bottom: 10px;
+    margin: 15px 0;
+    font-size: 1.2rem;
 }
 
 .feature-card p {
-    color: #B0B0B0;
+    font-size: 1rem;
+    color: #ccc;
 }
 
 /* Team Section */
 #team {
-    text-align: center;
-    margin-bottom: 50px;
+    background: #222;
+    padding: 50px 0;
 }
 
-.team-row {
+#team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-members {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
 }
 
 .team-member {
-    background: #1E1E1E;
-    border: 1px solid #333333;
-    border-radius: 10px;
-    padding: 20px;
     text-align: center;
-    width: 300px; /* Consistent width for cards */
+    width: 200px;
 }
 
 .team-member img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover; /* Ensure images fit perfectly */
-    border-radius: 50%; /* Makes the image circular */
-    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .team-member h3 {
-    color: #FFFFFF;
-    margin-bottom: 5px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .team-member p {
-    color: #B0B0B0;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #ccc;
 }
 
-/* Call-to-Action (CTA) Section */
+/* CTA Section */
 #cta {
+    background: #333;
+    padding: 50px 0;
     text-align: center;
-    background: #1E1E1E;
-    padding: 50px 20px;
 }
 
-#notifyMe {
-    background: #6200EE;
-    color: #FFFFFF;
-    border: none;
+#cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#cta form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #222;
+    color: #fff;
+}
+
+#cta button {
     padding: 10px 20px;
+    font-size: 1rem;
+    background: #6a1b9a;
+    color: #fff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#notifyMe:hover {
-    background: #3700B3;
+#cta button:hover {
+    background: #8e24aa;
 }
 
-#comingSoonMessage {
-    color: #03DAC5;
-    font-size: 1.2rem;
+#cta #waitlistMessage {
+    font-size: 1rem;
+    color: #66bb6a;
     margin-top: 20px;
     display: none;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 20px 0;
     text-align: center;
-    background: #1E1E1E;
-    padding: 10px 0;
-    border-top: 1px solid #333333;
-    color: #B0B0B0;
 }
 
-/* Waitlist Section */
-#cta {
-    text-align: center;
-    background: #1E1E1E;
-    padding: 50px 20px;
-}
-
-#cta h2 {
-    color: #FFFFFF;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-#cta p {
-    color: #B0B0B0;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-input[type="email"] {
-    padding: 10px;
+footer p {
     font-size: 1rem;
-    border: 1px solid #333333;
-    border-radius: 5px;
-    width: 300px;
-    background: #2C2C2C;
-    color: #FFFFFF;
 }
-
-input[type="email"]::placeholder {
-    color: #B0B0B0;
-}
-
-input[type="email"]:focus {
-    outline: none;
-    border-color: #6200EE;
-}
-
-#joinWaitlistButton {
-    background: #6200EE;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#joinWaitlistButton:hover {
-    background: #3700B3;
-}
-
-#waitlistMessage {
-    color: #03DAC5;
-    font-size: 1.2rem;
-    display: none; /* Hidden by default */
-}
-
