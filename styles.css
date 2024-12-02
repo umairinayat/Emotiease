@@ -1,16 +1,11 @@
-/* styles.css */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
-
-header {
-    background: #5cb85c;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #121212; /* Dark background */
+    color: #FFFFFF; /* Light text for contrast */
 }
 
 .container {
@@ -19,45 +14,211 @@ header {
     overflow: hidden;
 }
 
+/* Header */
+header {
+    background: #1E1E1E;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+}
+
+/* Main Content */
 main {
     padding: 20px 0;
-    background: #f4f4f4;
 }
 
-h1, h2 {
-    margin: 0 0 10px;
-    color: #333;
+/* Section Styles */
+section {
+    margin-bottom: 50px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+h2 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
-ul li {
-    background: #fff;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
+/* Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-button {
-    background: #5cb85c;
-    color: #fff;
+.feature-card {
+    background: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #B0B0B0;
+}
+
+/* Team Section */
+#team {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Consistent width for cards */
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensure images fit perfectly */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.team-member p {
+    color: #B0B0B0;
+    font-size: 1.1rem;
+}
+
+/* Call-to-Action (CTA) Section */
+#cta {
+    text-align: center;
+    background: #1E1E1E;
+    padding: 50px 20px;
+}
+
+#notifyMe {
+    background: #6200EE;
+    color: #FFFFFF;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 5px;
-    font-size: 1rem;
+    cursor: pointer;
 }
 
-button:hover {
-    background: #4cae4c;
+#notifyMe:hover {
+    background: #3700B3;
 }
 
+#comingSoonMessage {
+    color: #03DAC5;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Footer */
 footer {
     text-align: center;
+    background: #1E1E1E;
     padding: 10px 0;
-    background: #333;
-    color: #fff;
+    border-top: 1px solid #333333;
+    color: #B0B0B0;
+}
+
+/* Waitlist Section */
+#cta {
+    text-align: center;
+    background: #1E1E1E;
+    padding: 50px 20px;
+}
+
+#cta h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#cta p {
+    color: #B0B0B0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    width: 300px;
+    background: #2C2C2C;
+    color: #FFFFFF;
+}
+
+input[type="email"]::placeholder {
+    color: #B0B0B0;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #6200EE;
+}
+
+#joinWaitlistButton {
+    background: #6200EE;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#joinWaitlistButton:hover {
+    background: #3700B3;
+}
+
+#waitlistMessage {
+    color: #03DAC5;
+    font-size: 1.2rem;
+    display: none; /* Hidden by default */
 }

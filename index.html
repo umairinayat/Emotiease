@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotiease</title>
+    <title>Emotiease - AI Mental Health Companion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,35 +18,83 @@
             <div class="container">
                 <h2>About Emotiease</h2>
                 <p>
-                    Millions struggle with mental health challenges daily. Emotiease offers immediate, accessible, and personalized support, leveraging the power of AI to detect early signs of stress, anxiety, and depression through real-time voice tone analysis, facial expression recognition, and more.
+                    Millions struggle with mental health challenges daily. Emotiease offers immediate, accessible, and personalized support, leveraging AI to detect early signs of stress, anxiety, and depression through real-time voice tone analysis and facial expression recognition.
                 </p>
             </div>
         </section>
         <section id="features">
             <div class="container">
                 <h2>Key Features</h2>
-                <ul>
-                    <li>Interactive chatbot with text, voice, and video support</li>
-                    <li>Real-time mood analysis from facial expressions</li>
-                    <li>Voice-based stress and anxiety detection</li>
-                    <li>Personalized mental health advice</li>
-                    <li>Secure cloud storage for your data</li>
-                </ul>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="images\chatbot.avif" alt="Interactive Chatbot">
+                        <h3>Interactive Chatbot</h3>
+                        <p>Engage in text, voice, or video conversations with our AI-powered assistant.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images\mood.avif" alt="Mood Analysis">
+                        <h3>Mood Analysis</h3>
+                        <p>Real-time insights based on your facial expressions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images\stress.jpg" alt="Voice Stress Detection">
+                        <h3>Voice Stress Detection</h3>
+                        <p>Identify stress and anxiety through tone-of-voice analysis.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images\ad.jpg" alt="Personalized Advice">
+                        <h3>Personalized Advice</h3>
+                        <p>Receive tailored mental health suggestions and resources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <div class="container">
+                <h2>Our Team</h2>
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="images/dp.jpg" alt="Umair Inayat">
+                        <h3>Umair Inayat</h3>
+                        <p>AI Lead</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/abish.png" alt="Abish Baig">
+                        <h3>Abish Baig</h3>
+                        <p>Backend Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/samroz.png" alt="Samroz Burhan">
+                        <h3>Samroz Burhan</h3>
+                        <p>Frontend Developer</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="cta">
             <div class="container">
-                <h2>Coming Soon</h2>
-                <p>Join us on a journey to redefine mental health support.</p>
-                <button id="notifyMe">Notify Me</button>
+                <h2>Join Our Waitlist</h2>
+                <p>Sign up to be the first to know when we launch!</p>
+                <form id="waitlistForm">
+                    <input type="email" id="emailInput" placeholder="Enter your email" required>
+                    <button type="submit" id="joinWaitlistButton">Join Waitlist</button>
+                </form>
+                <p id="waitlistMessage">Thank you! You’ve successfully joined the waitlist.</p>
             </div>
         </section>
+        
     </main>
     <footer>
         <div class="container">
             <p>© 2024 Emotiease. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        // JavaScript for showing "Coming Soon" message
+        document.getElementById("notifyMe").addEventListener("click", function() {
+            const message = document.getElementById("comingSoonMessage");
+            message.style.display = "block"; // Show the message
+        });
+    </script>
 </body>
 </html>
