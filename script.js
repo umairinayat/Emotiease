@@ -9,10 +9,22 @@ document.getElementById("waitlistForm").addEventListener("submit", function(even
         waitlistMessage.style.display = "block";
 
         // Optionally, send the email to a server or API endpoint here
-        console.log("User email:", emailInput);
+        console.log("RADISIST early access email:", emailInput);
 
         // Clear the input field
         document.getElementById("emailInput").value = "";
     }
 });
+
+// Scroll reveal for elements with .reveal
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 

@@ -3,89 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotiease - AI Mental Health Companion</title>
+    <title>RADISIST — AI CT Scan Diagnostic Assistant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Welcome to Emotiease</h1>
-            <p>Your AI-powered mental health companion</p>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo-section">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#ffffff"/>
+                            <path d="M20 8L28 14V26L20 32L12 26V14L20 8Z" fill="#852310"/>
+                            <circle cx="20" cy="20" r="6" fill="#ffffff"/>
+                            <circle cx="20" cy="20" r="3" fill="#852310"/>
+                        </svg>
+                    </div>
+                    <h1>RADISIST</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#cta" class="nav-cta">Get Access</a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="badge-icon">🧠</span>
+                        <span>AI-Powered Medical Imaging</span>
+                    </div>
+                    <h2>See more. Diagnose faster.</h2>
+                    <p>Revolutionary AI technology for automated CT-scan analysis with disease detection and comprehensive diagnostic reports.</p>
+                    <div class="hero-actions">
+                        <a href="#cta" class="btn btn-primary">
+                            <span class="btn-icon">🚀</span>
+                            Request Early Access
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <span class="btn-icon">📋</span>
+                            Explore Features
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">95%+</span>
+                            <span class="stat-label">Accuracy</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10x</span>
+                            <span class="stat-label">Faster</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="medical-scanner">
+                        <div class="scanner-ring"></div>
+                        <div class="scanner-core">
+                            <div class="brain-scan">
+                                <div class="scan-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <section id="about">
             <div class="container">
-                <h2>About Emotiease</h2>
-                <p>
-                    Millions struggle with mental health challenges daily. Emotiease offers immediate, accessible, and personalized support, leveraging AI to detect early signs of stress, anxiety, and depression through real-time voice tone analysis and facial expression recognition.
-                </p>
-            </div>
-        </section>
-        <section id="features">
-            <div class="container">
-                <h2>Key Features</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <img src="images\chatbot.avif" alt="Interactive Chatbot">
-                        <h3>Interactive Chatbot</h3>
-                        <p>Engage in text, voice, or video conversations with our AI-powered assistant.</p>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <h2>Medical Imaging, Reinvented</h2>
+                        <p class="about-intro">
+                            Medical imaging has become the backbone of modern healthcare. CT (Computed Tomography) scans provide detailed insights into the human body and are commonly used for diagnosing brain, lung, abdominal, and other diseases.
+                        </p>
+                        <div class="challenge-box">
+                            <h3>🎯 The Challenge</h3>
+                            <p>Manual interpretation of CT scans requires highly skilled radiologists, is time-intensive, and may result in delayed or inaccurate diagnoses due to human limitations.</p>
+                        </div>
+                        <div class="solution-box">
+                            <h3>💡 Our Solution</h3>
+                            <p><strong>RADISIST (Radiology & Diagnostic System)</strong> leverages Artificial Intelligence and Deep Learning to automatically analyze CT scans, detect multiple diseases, and generate structured diagnostic reports.</p>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <img src="images\mood.avif" alt="Mood Analysis">
-                        <h3>Mood Analysis</h3>
-                        <p>Real-time insights based on your facial expressions.</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="images\stress.jpg" alt="Voice Stress Detection">
-                        <h3>Voice Stress Detection</h3>
-                        <p>Identify stress and anxiety through tone-of-voice analysis.</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="images\ad.jpg" alt="Personalized Advice">
-                        <h3>Personalized Advice</h3>
-                        <p>Receive tailored mental health suggestions and resources.</p>
+                    <div class="about-visual reveal">
+                        <div class="medical-workflow">
+                            <div class="workflow-step">
+                                <div class="step-icon">📤</div>
+                                <h4>Upload</h4>
+                                <p>CT Scan Images</p>
+                            </div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">
+                                <div class="step-icon">🧠</div>
+                                <h4>AI Analysis</h4>
+                                <p>Deep Learning</p>
+                            </div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">
+                                <div class="step-icon">📊</div>
+                                <h4>Report</h4>
+                                <p>Diagnostic Results</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="team">
+        <section id="stats">
             <div class="container">
-                <h2>Our Team</h2>
-                <div class="team-members">
-                    <div class="team-member">
-                        <img src="images/dp.jpg" alt="Umair Inayat">
-                        <h3>Umair Inayat</h3>
-                        <p>AI Lead</p>
+                <div class="stats-grid">
+                    <div class="stat-card reveal">
+                        <h3>10x</h3>
+                        <p>Faster triage vs. manual review</p>
                     </div>
-                    <div class="team-member">
-                        <img src="images/abish.png" alt="Abish Baig">
-                        <h3>Abish Baig</h3>
-                        <p>Backend Developer</p>
+                    <div class="stat-card reveal">
+                        <h3>95%+</h3>
+                        <p>Target diagnostic reliability</p>
                     </div>
-                    <div class="team-member">
-                        <img src="images/samroz.png" alt="Samroz Burhan">
-                        <h3>Samroz Burhan</h3>
-                        <p>Frontend Developer</p>
+                    <div class="stat-card reveal">
+                        <h3><span>24/7</span></h3>
+                        <p>Always-on assistance</p>
+                    </div>
+                    <div class="stat-card reveal">
+                        <h3>Secure</h3>
+                        <p>Privacy-first data handling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="problem">
+            <div class="container">
+                <h2 class="reveal">Description of the Problem</h2>
+                <ul class="bulleted">
+                    <li>Time delays in reporting.</li>
+                    <li>Errors in interpretation due to fatigue or high workload.</li>
+                    <li>Limited access to expert radiologists in remote areas.</li>
+                </ul>
+                <p>
+                    These issues highlight the need for an automated AI-based diagnostic solution that can provide accurate, fast, and accessible results.
+                </p>
+            </div>
+        </section>
+        <section id="solution">
+            <div class="container">
+                <h2 class="reveal">Solution Overview</h2>
+                <p>The major objectives of RADISIST are:</p>
+                <ul class="bulleted">
+                    <li>Analyze CT scan images using AI.</li>
+                    <li>Accurately detect and classify multiple diseases with deep learning.</li>
+                    <li>Generate detailed diagnostic reports for patients and clinicians.</li>
+                    <li>Reduce dependency on manual interpretation and improve efficiency.</li>
+                    <li>Provide a user-friendly web interface for easy accessibility.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="expected">
+            <div class="container">
+                <h2 class="reveal">Expected Results</h2>
+                <ul class="bulleted">
+                    <li>Real-time CT scan analysis with highlighted abnormalities and medical insights.</li>
+                    <li>Improved efficiency and accuracy in diagnostic decision-making.</li>
+                    <li>Reliable, accessible tool for regions with limited radiology expertise.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="features">
+            <div class="container">
+                <h2 class="reveal">Advanced AI Diagnostic Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <div class="medical-icon upload-icon">
+                                <div class="icon-circle">📤</div>
+                            </div>
+                        </div>
+                        <h3>Smart Upload & Processing</h3>
+                        <ul>
+                            <li>Secure CT scan upload in multiple formats</li>
+                            <li>Advanced preprocessing and enhancement</li>
+                            <li>AI-powered confidence scoring</li>
+                            <li>Structured diagnostic reports</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <div class="medical-icon disease-icon">
+                                <div class="icon-circle">🫁</div>
+                            </div>
+                        </div>
+                        <h3>Disease Detection</h3>
+                        <ul>
+                            <li>Lung cancer detection and staging</li>
+                            <li>Pulmonary infection identification</li>
+                            <li>Nodule and lesion analysis</li>
+                            <li>Future: Multi-organ expansion</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <div class="medical-icon ai-icon">
+                                <div class="icon-circle">🧠</div>
+                            </div>
+                        </div>
+                        <h3>AI-Powered Analysis</h3>
+                        <ul>
+                            <li>Deep CNN model architecture</li>
+                            <li>Real-time image processing</li>
+                            <li>Automated anomaly detection</li>
+                            <li>Intuitive visual highlights</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <div class="medical-icon security-icon">
+                                <div class="icon-circle">🔒</div>
+                            </div>
+                        </div>
+                        <h3>Enterprise-Grade Security</h3>
+                        <ul>
+                            <li>HIPAA-compliant data handling</li>
+                            <li>End-to-end encryption</li>
+                            <li>Scalable cloud infrastructure</li>
+                            <li>99.9% uptime guarantee</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="demo-section reveal">
+                    <h3>See RADISIST in Action</h3>
+                    <div class="demo-visual">
+                        <div class="ct-scan-demo">
+                            <div class="scan-image">
+                                <div class="scan-overlay"></div>
+                                <div class="detection-points">
+                                    <div class="detection-point point-1"></div>
+                                    <div class="detection-point point-2"></div>
+                                </div>
+                            </div>
+                            <div class="analysis-panel">
+                                <div class="analysis-item">
+                                    <span class="status-indicator normal">✓</span>
+                                    <span>Brain tissue: Normal</span>
+                                </div>
+                                <div class="analysis-item">
+                                    <span class="status-indicator attention">⚠</span>
+                                    <span>Possible lesion detected</span>
+                                </div>
+                                <div class="analysis-item">
+                                    <span class="status-indicator normal">✓</span>
+                                    <span>Bone structure: Normal</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="cta">
             <div class="container">
-                <h2>Join Our Waitlist</h2>
-                <p>Sign up to be the first to know when we launch!</p>
+                <h2 class="reveal">Get Early Access</h2>
+                <p>Be the first to try RADISIST. We’ll notify you when a demo is ready.</p>
                 <form id="waitlistForm">
                     <input type="email" id="emailInput" placeholder="Enter your email" required>
-                    <button type="submit" id="joinWaitlistButton">Join Waitlist</button>
+                    <button type="submit" id="joinWaitlistButton">Notify Me</button>
                 </form>
-                <p id="waitlistMessage">Thank you! You’ve successfully joined the waitlist.</p>
+                <p id="waitlistMessage">Thank you! You’ll be notified as soon as RADISIST is live.</p>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>© 2024 Emotiease. All Rights Reserved.</p>
+            <p>© 2024 RADISIST. All Rights Reserved.</p>
         </div>
     </footer>
     <script src="script.js"></script>
